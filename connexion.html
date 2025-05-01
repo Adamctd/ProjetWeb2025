@@ -1,0 +1,52 @@
+<html>
+    <head>
+      <title>
+        Connexion
+      </title>
+      <link rel="stylesheet" href="/shared.css">
+      <script type="module" src="connexion.js"></script>
+    </head>
+    <body>
+    <nav>
+        <ul class="menu-bar">
+          <li><a href=".">Accueil</a></li>
+          <li><a href="/contribuer">Contribuer</a></li>
+          <li><a href="connexion.html" class="actual">Connexion</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Connexion</h1>
+        <form id="sign-up-form" method="post">
+        <p>
+            <label for="username">Identifiant&nbsp;:</label>
+            <input
+            id="username"
+            type="text"
+            name="username"
+            autocomplete="username"
+            required
+            />
+        </p>
+        <p>
+            <label for="password">Mot de passe&nbsp;:</label>
+            <input
+            id="password"
+            type="password"
+            name="password"
+            required
+            autocomplete="new-password"
+            />
+        </p>
+        <p>
+            <label for="checkbox">Je suis nouveau sur le site</label>
+            <input type="checkbox" id="checkbox" name="checkbox">
+        </p>
+        <button type="submit">Se connecter</button>
+        <p id="username-exists-error" class="error">Ce nom d'utilisateur est déjà utilisé</p>
+        <p id="username-dont-exist-error" class="error">Ce nom d'utilisateur n'existe pas ou le mot de passe est incorrect</p>
+        <p id="sign-up-error" class="error">Erreur lors de l'inscription</p>
+        <p id="login-error" class="error">Erreur lors de la connexion</p>
+        </form>
+</main>
+</body>
+</html>
