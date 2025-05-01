@@ -1,0 +1,22 @@
+{
+    "name": "projet-web",
+    "version": "1.0.0",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "node --watch server.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "init-db": "node scripts/init-db.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "cookie-session": "^2.1.0",
+        "express": "^5.1.0",
+        "sqlite": "^5.1.1",
+        "sqlite3": "^5.1.7"
+    }
+}
